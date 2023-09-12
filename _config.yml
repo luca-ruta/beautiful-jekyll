@@ -10,17 +10,17 @@
 ############################
 
 # Name of website
-title: My Website
+title: Lucas Stuff
 
 # Your name to show in the footer
-author: Some Person
+author: Luca
 
 ###############################################
 # --- List of links in the navigation bar --- #
 ###############################################
 
 navbar-links:
-  About Me: "aboutme"
+  About Me: "Im him"
   Resources:
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Learn markdown: "https://www.markdowntutorial.com/"
