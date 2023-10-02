@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Sample blog post to learn markdown tips
-subtitle: There's lots to learn!
+title: Luca's First Art of Data Lab!
+subtitle: What did he do, may you ask?
 gh-repo: daattali/beautiful-jekyll
 gh-badge: [star, fork, follow]
 tags: [test]
@@ -9,82 +9,11 @@ comments: true
 ---
 
 {: .box-success}
-This is a demo post to show you how to write blog posts with markdown.  I strongly encourage you to [take 5 minutes to learn how to write in markdown](https://markdowntutorial.com/) - it'll teach you how to transform regular text into bold/italics/tables/etc.<br/>I also encourage you to look at the [code that created this post](https://raw.githubusercontent.com/daattali/beautiful-jekyll/master/_posts/2020-02-28-sample-markdown.md) to learn some more advanced tips about using markdown in Beautiful Jekyll.
-
-**Here is some bold text**
-
-## Here is a secondary heading
-
-[This is a link to a different site](https://deanattali.com/) and [this is a link to a section inside this page](#local-urls).
-
-Here's a table:
-
-| Number | Next number | Previous number |
-| :------ |:--- | :--- |
-| Five | Six | Four |
-| Ten | Eleven | Nine |
-| Seven | Eight | Six |
-| Two | Three | One |
-
-How about a yummy crepe?
-
-![Crepe](https://beautifuljekyll.com/assets/img/crepe.jpg)
-
-It can also be centered!
-
-![Crepe](https://beautifuljekyll.com/assets/img/crepe.jpg){: .mx-auto.d-block :}
-
-Here's a code chunk:
-
-~~~
-var foo = function(x) {
-  return(x + 5);
-}
-foo(3)
-~~~
-
-And here is the same code with syntax highlighting:
-
-```javascript
-var foo = function(x) {
-  return(x + 5);
-}
-foo(3)
-```
-
-And here is the same code yet again but with line numbers:
-
-{% highlight javascript linenos %}
-var foo = function(x) {
-  return(x + 5);
-}
-foo(3)
-{% endhighlight %}
-
-## Boxes
-You can add notification, warning and error boxes like this:
-
-### Notification
-
-{: .box-note}
-**Note:** This is a notification box.
-
-### Warning
-
-{: .box-warning}
-**Warning:** This is a warning box.
-
-### Error
-
-{: .box-error}
-**Error:** This is an error box.
-
-## Local URLs in project sites {#local-urls}
-
-When hosting a *project site* on GitHub Pages (for example, `https://USERNAME.github.io/MyProject`), URLs that begin with `/` and refer to local files may not work correctly due to how the root URL (`/`) is interpreted by GitHub Pages. You can read more about it [in the FAQ](https://beautifuljekyll.com/faq/#links-in-project-page). To demonstrate the issue, the following local image will be broken **if your site is a project site:**
-
-![Crepe](/assets/img/crepe.jpg)
-
-If the above image is broken, then you'll need to follow the instructions [in the FAQ](https://beautifuljekyll.com/faq/#links-in-project-page). Here is proof that it can be fixed:
-
-![Crepe]({{ '/assets/img/crepe.jpg' | relative_url }})
+## **My answers for 1-3!**
+1. The average speed of all the digimon is 120.401606426
+2. For “Type”, “Vaccine”: 70
+3. ['Koromon', 'Tsunomon', 'Tsumemon'] is a team of three digimon which has <=15 memory and >=300 attack.
+## **The work process for my methods (for each question, 1, 2 and 3.**
+1. The first method to find the average attack was the easiest by far, and I really did not run into any hiccups as I was writing my code. The key (or rather keys) to my code were the built-in list functions sum() and len(). Knowing I could use these, I put all of the digimon speeds into a single list so I could do sum()/len() which would return the average value of the numbers in the list.
+2. When I first approached this method, I was sure my code worked yet it was still giving me an error I had never seen. At this point in my coding process, I had accessed the csv as a nested dictionary using “with open()” outside of any of my methods, and because the first method iterated through the csv as such, when I was doing the same in my second method, the program was unable to iterate through it again. Thus, I had to recode my first and second methods such that I accessed the csv as a nested dictionary within the method so that I would not run into this problem. I would say this taught me a bit more about the limitations of csvs, as well as the limitations of python with csvs. In the end, my code essentially took two parameters which would be what the desired variable was and what the desired variable value was and check if they were the same for each individual digimon. If they were, our variable “count” would be increased by 1, and then the method would return “count” at the end.
+3. The third and final method confused me a bit at first. I knew it was not very difficult to look through the csv and find a group of three digimon that would meet the criteria, but that would be too simple. Ultimately, I decided to cheaply find three digimon which had less than five memory and over 100 attack so that any three digimon who fell in this category would make a team that met the criteria. However, the first issue I encountered was that my method would return a list of all of the digimon who fell into the <5 memory and >100 attack, not just a team of three. In order to cut this list down to just three, I tried placing a while loop in the for loop such that the length of the list would not exceed three, meaning the method would return three digimon. However, I was unable to make this work because the while loop was not placed correctly and kept returning the list containing all the <5 memory >100 attack digimon. Instead, I opted to take this list and make a while loop at the end of the method which would pop digimon until the list was at a length of three. This worked, and I successfully completed the task. However, I decided that a more interesting, and probably more adequate solution to this puzzle would be to find every possible team of three digimon that met the <15 memory >300 attack criteria. First, I used nested for loops to make every combination of three digimon, including teams where there were identical digimon. Then, I used a for loop to go through these teams and remove and lists where there were duplicates. This left me with a list of every possible digimon team, and so all I had to do was make one more for loop which could look through the teams and sum their memory and attack to make sure they met the criteria. If I had more time, I would have taken this last step, and ultimately the method would have returned every team of three digimon which had <15 memory >300 attack.
