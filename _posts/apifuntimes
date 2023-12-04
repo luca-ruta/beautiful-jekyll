@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Data Meta Analysis
-subtitle: I looked at a study concerning the microbiomes present in African penguins who live in managed conditions…
+title: Working with APIs: Sock Edition
+subtitle: So, I was asked to count some socks...
 gh-repo: daattali/beautiful-jekyll
 gh-badge: [star, fork, follow]
 tags: [luca is the goat]
@@ -9,5 +9,5 @@ comments: true
 ---
 
 {: .box-success}
-## **We did a little question answering...**
+## **Let's talk about socks...**
 1. 
