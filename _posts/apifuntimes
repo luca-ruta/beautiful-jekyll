@@ -10,4 +10,4 @@ comments: true
 
 {: .box-success}
 ## **Let's talk about socks...**
-1. 
+1. The way I accessed the data with the API was not the most efficient, but it was the easiest for me. I first accessed the server using my key, and then accessed the endpoint, "/socks." After doing this, I was able to convert the endpoint into a json object, which I then created a method for which turned it into a dictionary. This dictionary was much easier for me to deal with than the original json object itself.
