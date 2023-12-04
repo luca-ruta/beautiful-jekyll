@@ -11,3 +11,25 @@ comments: true
 {: .box-success}
 ## **Let's talk about socks...**
 1. The way I accessed the data with the API was not the most efficient, but it was the easiest for me. I first accessed the server using my key, and then accessed the endpoint, "/socks." After doing this, I was able to convert the endpoint into a json object, which I then created a method for which turned it into a dictionary. This dictionary was much easier for me to deal with than the original json object itself.
+2. 
+> argyle crew socks
+> color-blocked socks
+> frilly knee-high socks
+> holey tights
+> kiddie socks
+> mixed-tweed socks
+> no-show socks
+> semi-opaque socks
+> semi-opaque tights
+> sequin leggings
+> simple-accent socks
+> striped socks
+> striped tights
+> tube socks
+> ultra no-show socks
+> vivid leggings
+> vivid socks
+> vivid tights
+ <-- these all have 8 variations, which is the most variations any type of sock has.
+3. {'Pink': 44, 'Red': 43, 'Aqua': 33, 'Orange': 28, 'Purple': 39, 'Green': 51, 'Blue': 48, 'Yellow': 34, 'White': 89, 'Black': 65, 'Beige': 16, 'Gray': 33, 'Brown': 11, 'Colorful': 14}
+4. This lab was one of the harder ones for me, because firstly I was unfamiliar with the API syntax and I wasn't quite sure if I was doing everything correctly at first, and additionally, I think my vscode was not working great with requests for some reason. I finished the my code on repl.it, and it worked much better. The main thing I had issues with was with finding a way to iterate through the API properly. I tried a While loop and ended up with an infinite loop, and did some other incorrect things and was not finding success. In the end, I decided it would likely be the most efficient for me to make a dictionary of the json object instead because I had much higher familiarity with data in that format. Ultimately, the two methods were not incredibly complicated, but actually accessing the data was my big roadblock in this assignment. I learned quite a lot about APIs throughout this assignment. Firstly, I now have a much better understanding of the format of the json object after having to convert it to a dictionary, and honestly after all of the research it took to make that dictionary, I think I could have probably used the json object directly in my methods instead of converting it into a dictionary first. I also learned more about the endpoint characteristic of APIs and realized that for this lab in particular, I could combine my endpoint with my url because the only folder I ever needed to access was the socks folder. Overall, this lab was very informative and was a great introduction to APIs. Throughout this lab, I worked with Feingold, Ahaan, Thomas, Aydan, and Yash. 
